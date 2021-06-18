@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<configuration>
+
+    <property>
+        <name>http-server.http.port</name>
+        <value>10100</value>
+        <description>
+            Specifies the port for the HTTP server. trino uses HTTP for all
+            communication, internal and external
+        </description>
+    </property>
+
+    <property>
+        <name>query.max-memory</name>
+        <value>30GB</value>
+        <description>
+            The maximum amount of distributed memory that a query may use.
+
+            If you'd like to enter a value higher than the maximum on the slider,
+            click on the pencil that appears when you hover over the setting and
+            ignore that higher values are not recommended.
+        </description>
+    </property>
+
+    <property require-input="true">
+        <name>discovery.uri</name>
+        <value></value>
+        <description>
+            For example: http://${ip}:${port}
+        </description>
+    </property>
+
+    <property>
+        <name>spill-enabled</name>
+        <value>false</value>
+        <description>
+
+        </description>
+        <value-attributes>
+            <type>value-list</type>
+            <entries>
+                <entry>
+                    <value>true</value>
+                    <label>true</label>
+                </entry>
+                <entry>
+                    <value>false</value>
+                    <label>false</label>
+                </entry>
+            </entries>
+            <selection-cardinality>1</selection-cardinality>
+        </value-attributes>
+    </property>
+
+    <property require-input="true">
+        <name>spiller-spill-path</name>
+        <value>/data/trino/spill</value>
+        <description>
+        </description>
+    </property>
+
+    <property>
+        <name>jmx.rmiregistry.port</name>
+        <value>9080</value>
+    </property>
+    <property>
+        <name>jmx.rmiserver.port</name>
+        <value>9081</value>
+    </property>
+
+</configuration>
