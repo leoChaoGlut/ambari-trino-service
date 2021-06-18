@@ -18,8 +18,8 @@
     <schemaVersion>2.0</schemaVersion>
     <services>
         <service>
-            <name>TRINO_ETL</name>
-            <displayName>TRINO_ETL</displayName>
+            <name>TRINO_QUERY1</name>
+            <displayName>trino_query1</displayName>
             <version>358</version>
             <!--            <quickLinksConfigurations>-->
             <!--                <quickLinksConfiguration>-->
@@ -29,8 +29,8 @@
             <!--            </quickLinksConfigurations>-->
             <components>
                 <component>
-                    <name>TRINO_ETL_COORDINATOR</name>
-                    <displayName>TRINO_ETL_COORDINATOR</displayName>
+                    <name>TRINO_QUERY1_COORDINATOR</name>
+                    <displayName>TRINO_QUERY1_COORDINATOR</displayName>
                     <category>MASTER</category>
                     <cardinality>1</cardinality>
                     <versionAdvertised>true</versionAdvertised>
@@ -43,8 +43,8 @@
                 </component>
 
                 <component>
-                    <name>TRINO_ETL_WORKER</name>
-                    <displayName>TRINO_ETL_WORKER</displayName>
+                    <name>TRINO_QUERY1_WORKER</name>
+                    <displayName>TRINO_QUERY1_WORKER</displayName>
                     <category>SLAVE</category>
                     <cardinality>0+</cardinality>
                     <versionAdvertised>true</versionAdvertised>
@@ -56,8 +56,8 @@
                 </component>
 
                 <component>
-                    <name>TRINO_ETL_CLI</name>
-                    <displayName>TRINO_ETL_CLI</displayName>
+                    <name>TRINO_QUERY1_CLI</name>
+                    <displayName>TRINO_QUERY1_CLI</displayName>
                     <category>CLIENT</category>
                     <cardinality>0+</cardinality>
                     <versionAdvertised>true</versionAdvertised>
@@ -69,10 +69,10 @@
             </components>
 
             <configuration-dependencies>
-                <config-type>config.properties.etl</config-type>
-                <config-type>connectors.properties.etl</config-type>
-                <config-type>jvm.config.etl</config-type>
-                <config-type>node.properties.etl</config-type>
+                <config-type>config.properties.query1</config-type>
+                <config-type>connectors.properties.query1</config-type>
+                <config-type>jvm.config.query1</config-type>
+                <config-type>node.properties.query1</config-type>
             </configuration-dependencies>
 
 
