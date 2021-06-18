@@ -21,12 +21,12 @@
             <name>TRINO_ETL</name>
             <displayName>TRINO_ETL</displayName>
             <version>358</version>
-            <quickLinksConfigurations>
-                <quickLinksConfiguration>
-                    <fileName>quicklinks.json</fileName>
-                    <default>true</default>
-                </quickLinksConfiguration>
-            </quickLinksConfigurations>
+            <!--            <quickLinksConfigurations>-->
+            <!--                <quickLinksConfiguration>-->
+            <!--                    <fileName>quicklinks.json</fileName>-->
+            <!--                    <default>true</default>-->
+            <!--                </quickLinksConfiguration>-->
+            <!--            </quickLinksConfigurations>-->
             <components>
                 <component>
                     <name>TRINO_ETL_COORDINATOR</name>

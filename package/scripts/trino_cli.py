@@ -22,8 +22,8 @@ from common import trinoCliUrl
 class Cli(Script):
     def install(self, env):
         Execute('mkdir -p /usr/lib/trino/bin')
-        Execute('wget --no-check-certificate {0} -O /usr/lib/trino/bin/trino-cli'.format(trinoCliUrl))
-        Execute('chmod +x /usr/lib/trino/bin/trino-cli')
+        Execute('wget --no-check-certificate {0} -O /usr/bin/trino-cli'.format(trinoCliUrl))
+        Execute('chmod +x /usr/bin/trino-cli')
 
     def status(self, env):
         raise ClientComponentHasNoStatus()
