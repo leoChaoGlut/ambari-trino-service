@@ -1,0 +1,21 @@
+{
+  "hive": [
+    "connector.name=hive-hadoop2",
+    "hive.metastore.uri=thrift://dmp-master:9083",
+    "hive.allow-drop-table=true",
+    "hive.allow-rename-table=true",
+    "hive.allow-add-column=true",
+    "hive.allow-drop-column=true",
+    "hive.allow-rename-column=true"
+  ],
+  "kudu": [
+    "connector.name=kudu",
+    "kudu.client.master-addresses=dmp-kudu001:7051,dmp-kudu002:7051,dmp-kudu003:7051",
+    "kudu.schema-emulation.enabled=true",
+    "kudu.schema-emulation.prefix=presto::",
+    "kudu.client.default-admin-operation-timeout=30s",
+    "kudu.client.default-operation-timeout=30s",
+    "kudu.client.default-socket-read-timeout=10s",
+    "kudu.client.disable-statistics=false"
+  ]
+}

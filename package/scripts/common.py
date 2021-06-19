@@ -21,21 +21,22 @@ scriptDir = os.path.dirname(os.path.realpath(__file__))
 config = ConfigParser.ConfigParser()
 config.readfp(open(os.path.join(scriptDir, 'download.ini')))
 
-trinoTarUrl = config.get('download', 'trino_tar_url')
-trinoTarName = trinoTarUrl.split('/')[-1]
-trinoCliUrl = config.get('download', 'trino_cli_url')
-jdk11Url = config.get('download', 'jdk11_url')
-jdk11TarName = jdk11Url.split('/')[-1]
-
 packageDir = os.path.dirname(scriptDir)
 serviceDir = os.path.dirname(packageDir)
 serviceName = os.path.basename(serviceDir)
 
+trinoTarUrl = config.get('download', 'trino_tar_url')
+trinoTarName = trinoTarUrl.split('/')[-1]
+trinoCliUrl = config.get('download', 'trino_cli_url')
 trinoHome = '/data/trino/' + serviceName
-jdk11Home = '/data/jdk11/'
+
 etcDir = trinoHome + '/etc'
 catalogDir = etcDir + '/catalog'
 launcherPath = trinoHome + '/bin/launcher'
+
+jdk11Url = config.get('download', 'jdk11_url')
+jdk11TarName = jdk11Url.split('/')[-1]
+jdk11Home = '/data/jdk11/'
 
 exportJavaHomeAndPath = ' export JAVA_HOME=' + jdk11Home + ' && export PATH=${JAVA_HOME}/bin:$PATH '
 
