@@ -18,14 +18,14 @@ from resource_management.libraries.script.script import Script
 # config object that holds the configurations declared in the config xml file
 config = Script.get_config()
 
-node_properties = config['configurations']['node.properties.etl']
-jvm_config = config['configurations']['jvm.config.etl']
-config_properties = config['configurations']['config.properties.etl']
-access_control_properties = config['configurations']['access-control.properties.etl']
-rules_json = config['configurations']['rules.json.etl']
+node_properties = config['configurations']['node.properties.etl1']
+jvm_config = config['configurations']['jvm.config.etl1']
+config_properties = config['configurations']['config.properties.etl1']
+access_control_properties = config['configurations']['access-control.properties.etl1']
+rules_json = config['configurations']['rules.json.etl1']
 
-connectors_to_add = config['configurations']['connectors.properties.etl']['connectors.to.add']
-connectors_to_delete = config['configurations']['connectors.properties.etl']['connectors.to.delete']
+connectors_to_add = config['configurations']['connectors.properties.etl1']['connectors.to.add']
+connectors_to_delete = config['configurations']['connectors.properties.etl1']['connectors.to.delete']
 
 host_info = config['clusterHostInfo']
 
