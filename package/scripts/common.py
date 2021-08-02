@@ -33,8 +33,9 @@ serviceName = os.path.basename(serviceDir)
 
 installDir= '/home/service/var/data1'
 
-trinoHome = installDir + '/trino/' + serviceName
-jdk11Home = installDir + '/jdk11/'
+trinoHomePrefix= installDir + '/trino'
+trinoHome = trinoHomePrefix + '/' + serviceName
+jdk11Home = trinoHomePrefix + '/jdk11/'
 etcDir = trinoHome + '/etc'
 catalogDir = etcDir + '/catalog'
 launcherPath = trinoHome + '/bin/launcher'
