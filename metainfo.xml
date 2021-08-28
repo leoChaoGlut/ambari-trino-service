@@ -20,7 +20,7 @@
         <service>
             <name>TRINO_ETL1</name>
             <displayName>TRINO_ETL1</displayName>
-            <version>360</version>
+            <version>361</version>
             <!--            <quickLinksConfigurations>-->
             <!--                <quickLinksConfiguration>-->
             <!--                    <fileName>quicklinks.json</fileName>-->
