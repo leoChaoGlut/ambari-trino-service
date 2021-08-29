@@ -18,8 +18,8 @@
     <schemaVersion>2.0</schemaVersion>
     <services>
         <service>
-            <name>TRINO_query1</name>
-            <displayName>TRINO_query1</displayName>
+            <name>TRINO_query2</name>
+            <displayName>TRINO_query2</displayName>
             <version>361</version>
             <!--            <quickLinksConfigurations>-->
             <!--                <quickLinksConfiguration>-->
@@ -29,8 +29,8 @@
             <!--            </quickLinksConfigurations>-->
             <components>
                 <component>
-                    <name>TRINO_query1_COORDINATOR</name>
-                    <displayName>TRINO_query1_COORDINATOR</displayName>
+                    <name>TRINO_query2_COORDINATOR</name>
+                    <displayName>TRINO_query2_COORDINATOR</displayName>
                     <category>MASTER</category>
                     <cardinality>1</cardinality>
                     <versionAdvertised>true</versionAdvertised>
@@ -43,8 +43,8 @@
                 </component>
 
                 <component>
-                    <name>TRINO_query1_WORKER</name>
-                    <displayName>TRINO_query1_WORKER</displayName>
+                    <name>TRINO_query2_WORKER</name>
+                    <displayName>TRINO_query2_WORKER</displayName>
                     <category>SLAVE</category>
                     <cardinality>0+</cardinality>
                     <versionAdvertised>true</versionAdvertised>
@@ -56,8 +56,8 @@
                 </component>
 
                 <component>
-                    <name>TRINO_query1_CLI</name>
-                    <displayName>TRINO_query1_CLI</displayName>
+                    <name>TRINO_query2_CLI</name>
+                    <displayName>TRINO_query2_CLI</displayName>
                     <category>CLIENT</category>
                     <cardinality>0+</cardinality>
                     <versionAdvertised>true</versionAdvertised>
@@ -69,10 +69,10 @@
             </components>
 
             <configuration-dependencies>
-                <config-type>config.properties.query1</config-type>
-                <config-type>connectors.properties.query1</config-type>
-                <config-type>jvm.config.query1</config-type>
-                <config-type>node.properties.query1</config-type>
+                <config-type>config.properties.query2</config-type>
+                <config-type>connectors.properties.query2</config-type>
+                <config-type>jvm.config.query2</config-type>
+                <config-type>node.properties.query2</config-type>
             </configuration-dependencies>
 
 

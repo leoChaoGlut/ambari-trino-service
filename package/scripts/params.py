@@ -18,14 +18,14 @@ from resource_management.libraries.script.script import Script
 # config object that holds the configurations declared in the config xml file
 config = Script.get_config()
 
-node_properties = config['configurations']['node.properties.query1']
-jvm_config = config['configurations']['jvm.config.query1']
-config_properties = config['configurations']['config.properties.query1']
-access_control_properties = config['configurations']['access-control.properties.query1']
-rules_json = config['configurations']['rules.json.query1']
+node_properties = config['configurations']['node.properties.query2']
+jvm_config = config['configurations']['jvm.config.query2']
+config_properties = config['configurations']['config.properties.query2']
+access_control_properties = config['configurations']['access-control.properties.query2']
+rules_json = config['configurations']['rules.json.query2']
 
-connectors_to_add = config['configurations']['connectors.properties.query1']['connectors.to.add']
-connectors_to_delete = config['configurations']['connectors.properties.query1']['connectors.to.delete']
+connectors_to_add = config['configurations']['connectors.properties.query2']['connectors.to.add']
+connectors_to_delete = config['configurations']['connectors.properties.query2']['connectors.to.delete']
 
 host_info = config['clusterHostInfo']
 
