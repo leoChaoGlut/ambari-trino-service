@@ -49,8 +49,8 @@ class Coordinator(Script):
         from params import config_properties, host_info
 
         # 如果同一个集群里有多个trino集群,这个值也要跟着改如trino_coordinator_${env}_hosts
-        coordinator_hosts = 'trino_etl1_coordinator_hosts'
-        worker_hosts = 'trino_etl1_worker_hosts'
+        coordinator_hosts = 'trino_query1_coordinator_hosts'
+        worker_hosts = 'trino_query1_worker_hosts'
 
         if worker_hosts in host_info.keys():
             all_hosts = host_info[worker_hosts] + \
